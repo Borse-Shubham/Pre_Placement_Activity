@@ -13,7 +13,7 @@ int main()
     printf("Enter the size of array : \n");
     scanf("%d",&iSize);
 
-    ptr = (int *)malloc(iSize * sizeof(int));
+    ptr = (int *)calloc(iSize , sizeof(int));
     ptr[0] = 10;
     ptr[1] = 20;
     ptr[3] = 30;
